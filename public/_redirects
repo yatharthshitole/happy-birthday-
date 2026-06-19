@@ -1,0 +1,2 @@
+# Block direct access to asset files — redirect to 403
+/assets/* /403 403

@@ -1,0 +1,13 @@
+# Block direct browser access to assets — must go through /api/media
+/assets/*
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+  Content-Disposition: attachment
+  Access-Control-Allow-Origin: none
+
+# Security headers for main site
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=()
