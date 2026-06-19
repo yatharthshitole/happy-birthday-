@@ -1,0 +1,10 @@
+name = "birthday-payal"
+pages_build_output_dir = "public"
+compatibility_date = "2024-09-23"
+
+# Set secrets via Cloudflare Dashboard → Pages → Settings → Environment Variables
+# or via: wrangler pages secret put PASSWORD --project-name birthday-payal
+#
+# Required secrets:
+#   PASSWORD        — the login password (e.g. AyushLovesPayal)
+#   SESSION_SECRET  — any long random string for HMAC signing
